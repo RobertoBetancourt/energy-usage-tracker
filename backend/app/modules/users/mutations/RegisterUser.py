@@ -20,5 +20,5 @@ class RegisterUser(Mutation):
             raise GraphQLError("Error creating User object.", e)
         else:
             ok = True
-            message = "User have been created successfully"
+            message = "User has been created successfully"
             return RegisterUser(ok=ok, message=message)
